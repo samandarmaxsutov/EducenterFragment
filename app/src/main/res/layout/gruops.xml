@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <androidx.recyclerview.widget.RecyclerView
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:visibility="gone"
+        android:layout_width="200dp"
+        android:layout_gravity="center"
+        android:layout_height="400dp"
+        android:id="@+id/bayroqlar_rec"/>
+    <LinearLayout
+        android:id="@+id/layout_edit"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <TextView
+            android:gravity="center"
+            android:textColor="#3949AB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Yangi guruh qo'shish"/>
+
+
+
+        <EditText
+            android:id="@+id/gruh_nomi_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="10dp"
+            android:hint="Yangi gruh nomi" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/bekor_qilish1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:padding="20dp"
+                android:text="bekor qilish"
+                android:textColor="#632020"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/saqlash1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:padding="20dp"
+                android:text="saqlash"
+                android:textColor="#43A047"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
